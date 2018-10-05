@@ -23,8 +23,9 @@ module.exports = function (gameId, clean = true) {
     // link core and cli to active project
     // TODO - whats the ultimate way to do this? This feels 'spooky'
     await Promise.all([
-      npmLink('engine-core', PATH_ENGINE_CORE, srcPath),
-      npmLink('engine-cli', PATH_ENGINE_CLI, srcPath)
+      npmLink('@foreplay/client-core', PATH_ENGINE_CORE, srcPath),
+      npmLink('@foreplay/cli', PATH_ENGINE_CLI, srcPath),
+      npmLink('@foreplay/shared', PATH_ENGINE_CLI, srcPath)
     ]);
 
     // merge webpackConfig with custom options
