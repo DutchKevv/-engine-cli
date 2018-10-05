@@ -1,22 +1,30 @@
 {
-  "name": "@engine/cli",
+  "name": "@foreplay/cli",
   "version": "0.0.2",
-  "description": "engine cli module",
-  "main": "cli.js",
+  "description": "foreplay cli module",
+  "main": "./src/cli.js",
+  "author": "H.K.Brandsma",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "bin": {
+    "foreplay": "./src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DutchKevv/foreplay-cli"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node cli.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "bin": {
-    "engine": "cli.js"
+    "prepare": "",
+    "start": "node src/cli.js"
   },
   "dependencies": {
-    "@types/node": "10.11.4",
     "autoprefixer": "9.1.5",
     "circular-dependency-plugin": "5.0.2",
     "clean-webpack-plugin": "0.1.19",
+    "colors": "^1.3.2",
     "copy-webpack-plugin": "4.5.2",
     "css-loader": "1.0.0",
     "file-loader": "2.0.0",
@@ -39,5 +47,9 @@
     "webpack-bundle-analyzer": "^3.0.2",
     "webpack-cli": "^3.1.1",
     "webpack-merge": "4.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "10.11.4",
+    "@types/webpack": "^4.4.14"
   }
 }
