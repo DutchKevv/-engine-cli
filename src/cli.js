@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 const argv = require('minimist')(process.argv.slice(2));
-const watcher = require('./src/actions/watch/watch-game');
-const builder = require('./src/actions/build/build-game');
+const watcher = require('./actions/watch/watch-game');
+const builder = require('./actions/build/build-game');
 
 const watch = !!argv.watch;
 const prod = !!argv.prod;
