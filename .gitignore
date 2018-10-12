@@ -13,8 +13,4 @@
 **/*.map
 **/*.txt
 **/*.log
-**/*.js
 **/*.debug
-
-# CLI
-!/src/**/*.js
